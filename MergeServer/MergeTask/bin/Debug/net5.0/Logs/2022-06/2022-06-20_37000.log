@@ -1,0 +1,20 @@
+
+ 2022/06/20 10:38:58.891 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/06/20 10:38:59.023 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/06/20 10:38:59.023 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/06/20 10:38:59.046 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/06/20 10:39:02.577 [Info] 开始合并CSV [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_1 => TaskMerge.CombineCsv]
+
+ 2022/06/20 10:39:02.577 [Info] 开始合并funhash.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_3 => TaskMerge.SaveFunHash]
+
+ 2022/06/20 10:39:02.577 [Info] 开始写库funjson [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_4 => TaskMerge.SaveFunjson]
+
+ 2022/06/20 10:39:02.577 [Info] 开始合并RenderRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_2 => TaskMerge.CombineRenderRowjson]
+
+ 2022/06/20 10:39:02.577 [Info] 当前合并uuid:88df0418-ee3f-11ec-9179-2c4d544cb4bf [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/06/20 10:39:02.580 [Info] 开始合并FunRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]

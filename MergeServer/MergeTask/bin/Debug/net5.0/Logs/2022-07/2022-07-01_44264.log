@@ -1,0 +1,10 @@
+
+ 2022/07/01 18:43:12.749 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/07/01 18:43:12.895 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:43:12.895 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:43:12.923 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/07/01 18:43:13.996 [Info] 开始写库funjson [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_0 => TaskMerge.SaveFunjson]

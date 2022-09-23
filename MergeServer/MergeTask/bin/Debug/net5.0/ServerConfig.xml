@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServerConfig>
+  <ServerUrl WorkerName="worker_10.11.145.198" AnayzeServerIP="10.11.145.198" AnayzeServerPort="9050" />
+  <Database DatabaseIP="10.11.69.160" DatabasePort="27017" DatabaseName="UBox2"/>
+  <ReportUrl NotifyUrl="http://10.11.10.147:3001" />
+  <!--BaseDir服务器上传地址 AutoBoot是否自动启动上传服务器 UploadMode（已弃用）上传服务器类型MINIO，FLASK -->
+  <UploadDir Dir="F:\DataServer" AutoBoot="True" UploadMode="MINIO" AutoClean="true" AutoDelete="false" CheckDisk="D" CheckDiskSize="50"/>  
+  <ProfilerAnalyze Max="1"/>
+  <RobotMonitor FeishuRobot="https://open.feishu.cn/open-apis/bot/v2/hook/f17344bc-b5d9-4c95-9b10-775f1c1ea316"/>
+  <UnityDir Version="2019.4.17f1c1" Dir="D:\Unity\Editor\2019.4.17f1c1\Editor\Unity.exe" />
+</ServerConfig>

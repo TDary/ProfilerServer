@@ -1,0 +1,43 @@
+
+ 2022/07/01 18:43:30.930 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/07/01 18:43:31.066 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:43:31.066 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:43:31.101 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/07/01 18:43:32.226 [Info] 开始写库funjson [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_0 => TaskMerge.SaveFunjson]
+
+ 2022/07/01 18:44:41.339 [Error] System.Net.WebException: The SSL connection could not be established, see inner exception.
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthentication(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.AuthenticateAsClient(SslClientAuthenticationOptions sslClientAuthenticationOptions)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClientHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.HttpWebRequest.SendRequest(Boolean async)
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at UAuto.MHttpSender.SendPostJson(String serviceUrl, String parameterData, String ContentType, String Accept) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\NetWork\HTTP\MHttpSender.cs:line 103
+   at UAuto.TaskMerge.SendText(String gameid, String _uuid, String textmessage) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\Task\TaskMerge.cs:line 408
+   at UAuto.TaskMerge.Update(Single deltaTime) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\Task\TaskMerge.cs:line 367
+   at UAuto.TaskMng.Update(Single deltaTime) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\Task\TaskMng.cs:line 94
+   at UAuto.ProfilerAnalyzer.Update(Single deltaTime) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\ProfilerAnayze\ProfilerAnalyzer.cs:line 82
+   at UAuto.Program.Main(String[] args) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\Program.cs:line 32 [Program.Main]

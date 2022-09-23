@@ -1,0 +1,10 @@
+
+ 2022/07/01 18:36:43.167 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/07/01 18:36:43.293 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:36:43.293 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:36:43.317 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/07/01 18:36:45.367 [Info] 成功申请合并任务：62beb8da996d8d12ad4fb765 [TaskMng.Update => TaskMng.TryCreateTask => TaskMng.RequestMergeTask]

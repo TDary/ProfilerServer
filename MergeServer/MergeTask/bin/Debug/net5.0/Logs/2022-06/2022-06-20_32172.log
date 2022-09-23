@@ -1,0 +1,24 @@
+
+ 2022/06/20 10:23:05.941 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/06/20 10:23:06.083 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/06/20 10:23:06.083 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/06/20 10:23:06.107 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/06/20 10:23:07.923 [Info] 成功申请合并任务：62ac7f4ad9539b45b3fde3c3 [TaskMng.Update => TaskMng.TryCreateTask => TaskMng.RequestMergeTask]
+
+ 2022/06/20 10:23:10.582 [Info] 开始合并CSV [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_1 => TaskMerge.CombineCsv]
+
+ 2022/06/20 10:23:10.611 [Info] 开始合并funhash.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_3 => TaskMerge.SaveFunHash]
+
+ 2022/06/20 10:23:10.611 [Info] 开始写库funjson [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_4 => TaskMerge.SaveFunjson]
+
+ 2022/06/20 10:23:10.611 [Info] 开始合并RenderRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_2 => TaskMerge.CombineRenderRowjson]
+
+ 2022/06/20 10:23:10.611 [Info] 当前合并uuid:88df0418-ee3f-11ec-9179-2c4d544cb4bf [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/06/20 10:23:10.611 [Info] 开始合并FunRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/06/20 10:23:34.737 [Warn] Newtonsoft.Json.JsonReaderException: The reader's MaxDepth of 64 has been exceeded. Path '[231].flame.children[0].children[8].children[0].children[0].children[1].children[31].children[0].children[0].children[6].children[3].children[2].children[4].children[2].children[3].children[0].children[0].children[0].children[1].children[0].children[0].children[0].children[0].children[0].children[1].children[1].children[1].children[1].children[0].children[0].children[1].children[0]', line 1, position 35514581. [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_4 => TaskMerge.SaveFunjson]

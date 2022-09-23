@@ -1,0 +1,22 @@
+
+ 2022/07/01 18:35:42.778 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/07/01 18:35:42.910 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:35:42.910 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:35:42.943 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/07/01 18:35:43.859 [Info] 开始合并CSV [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_1 => TaskMerge.CombineCsv]
+
+ 2022/07/01 18:35:43.859 [Info] 开始合并funhash.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_3 => TaskMerge.SaveFunHash]
+
+ 2022/07/01 18:35:43.859 [Info] 开始合并RenderRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_2 => TaskMerge.CombineRenderRowjson]
+
+ 2022/07/01 18:35:43.859 [Info] 当前合并uuid:81dfae90-f91c-11ec-82eb-708bcdbb2eb7 [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/07/01 18:35:43.859 [Info] 开始合并FunRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/07/01 18:35:46.872 [Error] Newtonsoft.Json.JsonReaderException: Unterminated string. Expected delimiter: ". Path '-852354212.frames[271].self', line 1, position 16969728. [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__38_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/07/01 18:35:59.452 [Info] 成功申请合并任务：62beb8da996d8d12ad4fb765 [TaskMng.Update => TaskMng.TryCreateTask => TaskMng.RequestMergeTask]

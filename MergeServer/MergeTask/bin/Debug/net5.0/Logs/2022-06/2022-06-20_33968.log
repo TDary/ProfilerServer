@@ -1,0 +1,12 @@
+
+ 2022/06/20 10:00:10.022 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/06/20 10:00:10.228 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/06/20 10:00:10.228 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/06/20 10:00:10.334 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/06/20 10:00:12.505 [Info] 成功申请合并任务：62ac7f4ad9539b45b3fde3c3 [TaskMng.Update => TaskMng.TryCreateTask => TaskMng.RequestMergeTask]
+
+ 2022/06/20 10:00:13.548 [Warn] 获取分析文件失败,Url:http://10.11.69.161:8600/88df0418-ee3f-11ec-9179-2c4d544cb4bf/1655395200.raw.csv [TaskMng.Update => TaskMerge.Begin => TaskMng.GetAnalyzeFile]

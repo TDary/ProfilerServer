@@ -1,0 +1,8 @@
+
+ 2022/07/01 18:42:42.055 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/07/01 18:42:42.211 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:42:42.211 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 18:42:42.263 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]

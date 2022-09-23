@@ -1,0 +1,48 @@
+
+ 2022/07/01 17:26:20.032 [Info] 欢迎使用UAutoDistriServer合并服务器 [Program.Main]
+
+ 2022/07/01 17:26:20.179 [Info] 初始化配置文件成功 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 17:26:20.179 [Info] 启动数据库成功 10.11.69.160:27017 [Program.Main => ProfilerAnalyzer.Init]
+
+ 2022/07/01 17:26:20.223 [Info] 初始化配置文件成功 [DB.get_Instance => DB..cctor => DB..ctor]
+
+ 2022/07/01 17:26:21.768 [Info] 开始合并CSV [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_1 => TaskMerge.CombineCsv]
+
+ 2022/07/01 17:26:21.768 [Info] 开始写库funjson [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_4 => TaskMerge.SaveFunjson]
+
+ 2022/07/01 17:26:21.768 [Info] 开始合并funhash.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_3 => TaskMerge.SaveFunHash]
+
+ 2022/07/01 17:26:21.768 [Info] 开始合并RenderRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_2 => TaskMerge.CombineRenderRowjson]
+
+ 2022/07/01 17:26:21.768 [Info] 当前合并uuid:81a0118a-f901-11ec-8e2c-704d7bb29ee8 [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/07/01 17:26:21.768 [Info] 开始合并FunRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/07/01 17:26:43.639 [Info] CSV上传成功---- [TaskMerge.Update => TaskMerge.SuccessCase => TaskMerge.SuccessMerge]
+
+ 2022/07/01 17:26:46.214 [Warn] 请求NotifyWeb出错:System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at UAuto.MHttpSender.SendPostJson(String serviceUrl, String parameterData, String ContentType, String Accept) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\NetWork\HTTP\MHttpSender.cs:line 103
+   at UAuto.TaskMerge.NotifyWeb(String gameid, String _uuid, String deviceinfo, String casename) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\Task\TaskMerge.cs:line 1156 [Task.InnerInvoke => TaskMerge.<SuccessMerge>b__69_0 => TaskMerge.NotifyWeb]
+
+ 2022/07/01 17:26:50.097 [Info] 当前合并uuid:f3956d78-f917-11ec-bbb3-704d7bb29ee8 [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/07/01 17:26:50.097 [Info] 开始合并CSV [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_1 => TaskMerge.CombineCsv]
+
+ 2022/07/01 17:26:50.097 [Info] 开始合并RenderRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_2 => TaskMerge.CombineRenderRowjson]
+
+ 2022/07/01 17:26:50.097 [Info] 开始合并FunRow.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_0 => TaskMerge.CombineFunRowjson]
+
+ 2022/07/01 17:26:50.097 [Info] 开始合并funhash.json [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_3 => TaskMerge.SaveFunHash]
+
+ 2022/07/01 17:26:50.108 [Info] 开始写库funjson [ThreadHelper.ThreadStart_Context => TaskMerge.<Update>b__39_4 => TaskMerge.SaveFunjson]
+
+ 2022/07/01 17:27:08.270 [Info] CSV上传成功---- [TaskMerge.Update => TaskMerge.SuccessCase => TaskMerge.SuccessMerge]
+
+ 2022/07/01 17:27:08.556 [Warn] 请求NotifyWeb出错:System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at UAuto.MHttpSender.SendPostJson(String serviceUrl, String parameterData, String ContentType, String Accept) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\NetWork\HTTP\MHttpSender.cs:line 103
+   at UAuto.TaskMerge.NotifyWeb(String gameid, String _uuid, String deviceinfo, String casename) in F:\NewBVT\UAutoProfiler_U3DTool\MergeTask\MergeTask\Task\TaskMerge.cs:line 1156 [Task.InnerInvoke => TaskMerge.<SuccessMerge>b__69_0 => TaskMerge.NotifyWeb]
+
+ 2022/07/01 17:27:09.811 [Info] 成功申请合并任务：62beb87c996d8d12ad4fb764 [TaskMng.Update => TaskMng.TryCreateTask => TaskMng.RequestMergeTask]
